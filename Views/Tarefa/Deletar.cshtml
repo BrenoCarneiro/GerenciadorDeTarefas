@@ -1,0 +1,42 @@
+﻿@model GerenciadorDeTarefas.Models.Tarefa
+
+@{
+    ViewData["Title"] = "Deletar Tarefa";
+}
+
+<h3 style="color: red;">Deseja realmente deletar essa tarefa?<br /> (Essa operação é irreversível)</h3>
+<hr />
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Título:
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Titulo)
+        </dt>
+        <dt class="col-sm-2">
+            Descrição:
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-2">
+            Data:
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Data)
+        </dt>
+        <dt class="col-sm-2">
+            Status:
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Status)
+        </dt>
+    </dl>
+</div>
+
+<form asp-action="Deletar">
+    <input type="submit" value="Deletar" class="btn btn-danger" />
+</form>
+<br />
+<a asp-action="Index">Voltar</a>
