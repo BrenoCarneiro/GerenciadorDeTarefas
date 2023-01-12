@@ -2,10 +2,10 @@
 
 
 @{
-    ViewData["Data"] = "Criar nova tarefa";
+    ViewData["Title"] = "Criar Nova Tarefa";
 }
 
-<h1>Criar nova tarefa</h1>
+<h3>Criar nova tarefa</h3>
 
 <hr />
 
@@ -13,11 +13,11 @@
     <div class="col-md-4">
         <form asp-action="Criar">
             <div class="form-group">
-                <label asp-for="Titulo" class="control-label"></label>
+                <label asp-for="Titulo" class="control-label">Título</label>
                 <input asp-for="Titulo" class="form-control" />
             </div>
             <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
+                <label asp-for="Descricao" class="control-label">Descrição</label>
                 <input asp-for="Descricao" class="form-control" />
             </div>
             <div class="form-group">
